@@ -1,0 +1,9 @@
+in this week we have learned basic Dart programming language we watch full dart tutorial
+and practice few dart programs that do simple functionality. And we have setuped flutter to
+setup flutter first we have downloades java jdk then we have downloaded flutter then 
+we have set paths in enviroment variable and installed andriod studio to build flutter 
+app on android studio we have installed plugin of flutter in android studio then we have 
+created our first app called namer app by watching tutorial of code lab in this app we use 
+build in libraries to get name and add them to favourite and view them, we also have used
+flutter doctor to check if the flutter in fully installed like few of error were detected by flutter
+doctor regarding permission of license of android studio we have resolved them as well.
