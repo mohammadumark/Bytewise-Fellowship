@@ -1,0 +1,8 @@
+in wee 3 of bytewise fellowship we have learned about flutter widgets
+like we have learned about different widgets we have practiced different 
+widgets like we have learned about container widget, circle avatar widget , list tile
+list view builder widgets expanded widget ,rich text widgets, sized box , divider
+stack widgets we have practive almost every widget  also i have practiced how 
+ to change boarder color of text field whwn in idle or being focused or error occured
+also learned how to add prefix icon and also learned how to add photo to background in 
+comtainer we have also watched intro about statefull and state less .
