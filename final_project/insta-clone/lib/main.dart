@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:insta_clone/responsive/mobileScreenLayout.dart';
 import 'package:insta_clone/responsive/responsive_layout.dart';
 import 'package:insta_clone/responsive/webScreenLayoout.dart';
+import 'package:insta_clone/screens/login_screen.dart';
 import 'package:insta_clone/utils/colors.dart';
 
 void main() async {
@@ -35,10 +36,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: mobileBackgroundColor,
       ),
-      home: const ResponsiveLayout(
-        mobileScreenLayout: MobileScreenLayout(),
-        webScreenLayout: WebScreenLayout(),
-      ),
+      home: const LoginScreen(),
     );
   }
 }

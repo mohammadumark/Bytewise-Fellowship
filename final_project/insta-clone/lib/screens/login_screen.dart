@@ -32,26 +32,28 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Flexible(child: Container(), flex: 2,),
+              Flexible(flex: 2,child: Container(),),
               SvgPicture.asset(
-                'assets/ic-instagram.svg',
-                color: primaryColor, height: 64,),
+                'assets/ic_instagram.svg',
+                color: primaryColor,
+                height: 64,
+              ),
+
               const SizedBox(height: 64),
               TextFieldInput(
                 textEditingController: _emailController,
                 hintText: 'Enter your email',
                 textInputType: TextInputType.emailAddress,
               ),
-              SizedBox(height: 24,),
+              const SizedBox(height: 24,),
               TextFieldInput(
                 textEditingController: _passwordController,
                 hintText: 'Enter your password',
                 textInputType: TextInputType.text,
                 isPass: true,
               ),
-              SizedBox(height: 24,),
+              const SizedBox(height: 24,),
               Container(
-                child: const Text('Log in'),
                 width: double.infinity,
                 alignment: Alignment.center,
                 padding: const EdgeInsets.symmetric(vertical: 12),
@@ -62,7 +64,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     )
                     )
                 ),
-                color: blueColor,
+                // color: Colors.blue,
+                child: const Text('Log in'),
               ),
               const SizedBox(
                 height: 12,
@@ -79,13 +82,13 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: const Text('Dont have an account?'),
                   ),
                   Container(
-                    child: Text("Sign up",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),),
                     padding: const EdgeInsets.symmetric(
                       vertical: 8
                     ),
+                    child: const Text("Sign up",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),),
                   )
                 ],
 
