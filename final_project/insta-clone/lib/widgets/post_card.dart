@@ -4,7 +4,6 @@ import 'package:insta_clone/models/user.dart' as model;
 import 'package:insta_clone/provider/user_provider.dart';
 import 'package:insta_clone/resources/firestore_methods.dart';
 import 'package:insta_clone/screens/comment_screen.dart';
-import 'package:insta_clone/screens/add_post.dart';
 import 'package:insta_clone/utils/colors.dart';
 import 'package:insta_clone/utils/global_variable.dart';
 import 'package:insta_clone/utils/utils.dart';

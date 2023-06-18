@@ -17,11 +17,11 @@ void main() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
-          apiKey: "AIzaSyCZ-xrXqD5D19Snauto-Fx_nLD7PLrBXGM",
-          appId: "1:585119731880:web:eca6e4b3c42a755cee329d",
-          messagingSenderId: "585119731880",
-          projectId: "instagram-clone-4cea4",
-          storageBucket: 'instagram-clone-4cea4.appspot.com'
+          apiKey: "AIzaSyBzVhVMQyeT8Tv4q_GmNS0WmHPuA8nFFBo",
+          appId: "1:790153239395:web:963c48d991e8c615c45156",
+          messagingSenderId: "790153239395",
+          projectId: "insta-clone-20b38",
+          storageBucket: 'insta-clone-20b38.appspot.com'
       ),
     );
   } else {
@@ -52,8 +52,7 @@ class MyApp extends StatelessWidget {
               // Checking if the snapshot has any data or not
               if (snapshot.hasData) {
                 // if snapshot has data which means user is logged in then we check the width of screen and accordingly display the screen layout
-                return const
-                ResponsiveLayout(
+                return const ResponsiveLayout(
                   mobileScreenLayout: MobileScreenLayout(),
                   webScreenLayout: WebScreenLayout(),
                 );
