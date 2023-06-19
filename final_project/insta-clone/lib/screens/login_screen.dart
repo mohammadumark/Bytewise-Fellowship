@@ -70,12 +70,11 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Flexible(
-                flex: 2,
-                child: Container(),
-              ),
-              Image.asset('assets/logo_ic.png',
-                color: primaryColor, // Optional: Add color if needed
+              Flexible(child: Container(), flex: 2),
+              SvgPicture.asset(
+                'assets/ic_instagram.svg' ,
+                // ignore: deprecated_member_use
+                color: primaryColor,
                 height: 64,
               ),
               const SizedBox(

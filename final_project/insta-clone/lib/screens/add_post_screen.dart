@@ -1,12 +1,14 @@
 import 'dart:typed_data';
 
-import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
+import 'package:insta_clone/models/user.dart';
 import 'package:insta_clone/provider/user_provider.dart';
 import 'package:insta_clone/resources/firestore_methods.dart';
 import 'package:insta_clone/utils/colors.dart';
 import 'package:insta_clone/utils/utils.dart';
+import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
+
 
 class AddPostScreen extends StatefulWidget {
   const AddPostScreen({Key? key}) : super(key: key);
@@ -161,11 +163,11 @@ class _AddPostScreenState extends State<AddPostScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              // CircleAvatar(
-              //   backgroundImage: NetworkImage(
-              //     userProvider.getUser.photoUrl,
-              //   ),
-              // ),
+              CircleAvatar(
+                backgroundImage: NetworkImage(
+                  userProvider.getUser.photoUrl,
+                ),
+              ),
               SizedBox(
                 width: MediaQuery.of(context).size.width * 0.3,
                 child: TextField(

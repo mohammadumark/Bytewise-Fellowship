@@ -183,6 +183,11 @@ class _PostCardState extends State<PostCard> {
                   opacity: isLikeAnimating ? 1 : 0,
                   child: LikeAnimation(
                     isAnimating: isLikeAnimating,
+                    child: const Icon(
+                      Icons.favorite,
+                      color: Colors.white,
+                      size: 100,
+                    ),
                     duration: const Duration(
                       milliseconds: 400,
                     ),
@@ -191,11 +196,6 @@ class _PostCardState extends State<PostCard> {
                         isLikeAnimating = false;
                       });
                     },
-                    child: const Icon(
-                      Icons.favorite,
-                      color: Colors.white,
-                      size: 100,
-                    ),
                   ),
                 ),
               ],
@@ -288,7 +288,6 @@ class _PostCardState extends State<PostCard> {
                 ),
                 InkWell(
                   child: Container(
-                    padding: const EdgeInsets.symmetric(vertical: 4),
                     child: Text(
                       'View all $commentLen comments',
                       style: const TextStyle(
@@ -296,6 +295,7 @@ class _PostCardState extends State<PostCard> {
                         color: secondaryColor,
                       ),
                     ),
+                    padding: const EdgeInsets.symmetric(vertical: 4),
                   ),
                   onTap: () => Navigator.of(context).push(
                     MaterialPageRoute(
@@ -306,7 +306,6 @@ class _PostCardState extends State<PostCard> {
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.symmetric(vertical: 4),
                   child: Text(
                     DateFormat.yMMMd()
                         .format(widget.snap['datePublished'].toDate()),
@@ -314,6 +313,7 @@ class _PostCardState extends State<PostCard> {
                       color: secondaryColor,
                     ),
                   ),
+                  padding: const EdgeInsets.symmetric(vertical: 4),
                 ),
               ],
             ),
